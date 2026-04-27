@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Praktikum 1 - Penulisan CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      line-height: 1.6;
+    }
+    h1 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 8px;
+    }
+    .internal {
+      color: blue;
+      font-size: 18px;
+    }
+    pre {
+      background: #f0f0f0;
+      padding: 10px;
+      border-left: 4px solid #5d77cb;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praktikum 1 - Penulisan CSS</h1>
+
+  <h2 style="color: red;">1. Inline CSS</h2>
+  <p style="color: green; font-style: italic;">
+    Paragraf ini menggunakan <b>inline CSS</b> langsung pada atribut style.
+  </p>
+  <pre>&lt;h1 style="color: red"&gt;Judul Web&lt;/h1&gt;</pre>
+
+  <h2 class="internal">2. Internal CSS</h2>
+  <p class="internal">
+    Paragraf ini menggunakan <b>internal CSS</b> yang ditulis di dalam tag &lt;style&gt; pada bagian &lt;head&gt;.
+  </p>
+  <pre>&lt;style&gt;
+  h1 { color: red; }
+&lt;/style&gt;</pre>
+
+  <h2>3. External CSS</h2>
+  <p>
+    External CSS ditulis di file terpisah berekstensi <code>.css</code> lalu dipanggil di dalam tag head.
+  </p>
+  <pre>&lt;link rel="stylesheet" href="namafile.css"&gt;</pre>
+</body>
+</html>

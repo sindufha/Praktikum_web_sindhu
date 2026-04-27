@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Praktikum 6 - Positioning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    h1 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 8px;
+    }
+    .container {
+      position: relative;
+      height: 200px;
+      border: 1px dashed #888;
+      margin-bottom: 20px;
+      background: #f7f7f7;
+    }
+    .static-box {
+      position: static;
+      background: #f39c12;
+      width: 180px;
+      height: 60px;
+      padding: 10px;
+      color: white;
+      margin-bottom: 15px;
+    }
+    .relative-box {
+      position: relative;
+      top: 30px;
+      left: 50px;
+      background: green;
+      width: 180px;
+      height: 60px;
+      padding: 10px;
+      color: white;
+      margin-bottom: 15px;
+    }
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: navy;
+      width: 180px;
+      height: 60px;
+      padding: 10px;
+      color: white;
+    }
+    .fixed-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: crimson;
+      width: 150px;
+      height: 60px;
+      padding: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praktikum 6 - Positioning</h1>
+
+  <h3>1. Static (default)</h3>
+  <div class="static-box">position: static</div>
+
+  <h3>2. Relative (geser dari posisi normal)</h3>
+  <div class="relative-box">position: relative; top: 30px; left: 50px</div>
+
+  <h3>3. Absolute (di dalam container relative)</h3>
+  <div class="container">
+    <div class="absolute-box">position: absolute; top: 20; right: 20</div>
+  </div>
+
+  <h3>4. Fixed (tetap saat di-scroll)</h3>
+  <div class="fixed-box">position: fixed</div>
+
+  <p>Scroll halaman ini buat lihat efek <b>fixed</b> yang tetap nempel di pojok kanan bawah.</p>
+  <div style="height: 600px;"></div>
+  <p>Akhir halaman.</p>
+</body>
+</html>

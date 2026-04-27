@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 14px;
+  color: #2c3e50;
+  background-color: #f7f7f9;
+  line-height: 1.6;
+}
+ 
+p {
+  text-align: justify;
+  color: #444;
+}
+ 
+#header {
+  background-color: #52d2ec;
+  padding: 25px 20px;
+  color: #161313;
+}
+ 
+#header h1 {
+  margin: 0 0 6px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+ 
+#menubar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #b7a0dc;
+  height: 44px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+ 
+#menubar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+ 
+#menubar a:hover {
+  color: #2c3e50;
+}
+
+.home,
+.beranda,
+.produk {
+  text-decoration: none;
+  text-align: center;
+}
+
+.home:hover,
+.beranda:hover,
+.produk:hover {
+  color: #ffffff;
+}
+
+#konten {
+  padding: 10px 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.kotak {
+  float: left;
+  box-sizing: border-box;
+  width: 31%;
+  margin: 1%;
+  height: 180px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-top: 4px solid #5d77cb;
+  border-radius: 6px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kotak:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+.kotak h3 {
+  margin: 0 0 10px 0;
+  padding-bottom: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 1px solid #e0e0e0;
+}
+ 
+.kotak ol {
+  margin: 0;
+  padding-left: 22px;
+  list-style-type: decimal;
+  line-height: 1.9;
+  font-size: 13px;
+}
+ 
+.kotak a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 400;
+}
+ 
+.kotak a:hover {
+  color: #5d77cb;
+  text-decoration: underline;
+}
+ 
+#footer {
+  background-color: #5d77cb;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}

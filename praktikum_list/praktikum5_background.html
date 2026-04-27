@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Praktikum 5 - Background</title>
+  <style>
+    body {
+      background-color: #b0c4de;
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    h1 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 8px;
+    }
+    .demo {
+      padding: 15px;
+      margin-bottom: 12px;
+      border: 1px solid #555;
+      width: 350px;
+    }
+    .warna-hex { background-color: #ff0000; color: white; }
+    .warna-rgb { background-color: rgb(0, 128, 0); color: white; }
+    .warna-nama { background-color: orange; color: black; }
+    .gradient {
+      background-image: linear-gradient(to right, #52d2ec, #5d77cb);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praktikum 5 - Background</h1>
+
+  <p>Background body menggunakan <code>background-color: #b0c4de;</code></p>
+
+  <div class="demo warna-hex">background-color: #ff0000 (HEX)</div>
+  <div class="demo warna-rgb">background-color: rgb(0, 128, 0) (RGB)</div>
+  <div class="demo warna-nama">background-color: orange (Nama Warna)</div>
+  <div class="demo gradient">background-image: linear-gradient(...)</div>
+
+  <h3>Properti Background lainnya:</h3>
+  <ul>
+    <li><b>background-image</b>: <code>url("paper.gif")</code></li>
+    <li><b>background-repeat</b>: <code>repeat-x | repeat-y | no-repeat</code></li>
+    <li><b>background-attachment</b>: <code>scroll | fixed</code></li>
+    <li><b>background-position</b>: <code>center | left top | right bottom</code></li>
+  </ul>
+</body>
+</html>
